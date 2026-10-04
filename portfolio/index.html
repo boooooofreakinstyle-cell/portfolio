@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Name M.I. Last Name — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- fretwork pattern definition -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="fret" width="28" height="28" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="currentColor" stroke-width="1.4">
+        <path d="M0 14 H8 M20 14 H28"/>
+        <rect x="9" y="9" width="10" height="10" transform="rotate(45 14 14)"/>
+        <circle cx="14" cy="14" r="2" fill="currentColor" stroke="none"/>
+      </g>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ================= MASTHEAD ================= -->
+<header class="masthead sheet">
+  <div class="masthead-inner">
+    <div>
+      <h1><a class="masthead-name" href="index.html">First Name M.I. Last Name</a></h1>
+      <p class="masthead-desc">Design &amp; Engineering · Berlin</p>
+    </div>
+    <div class="headshot-frame">
+      <img src="https://picsum.photos/seed/headshot/600/750"
+           alt="Portrait of First Name M.I. Last Name">
+    </div>
+  </div>
+</header>
+
+<svg class="calado" preserveAspectRatio="none" aria-hidden="true"><rect width="100%" height="100%" fill="url(#fret)"/></svg>
+
+<!-- ================= CAROUSEL ================= -->
+<section class="sheet index-section">
+  <div class="eyebrow">Selected Projects</div>
+
+  <div class="carousel-top">
+    <span class="c-folio" id="cFolio">01 / 03</span>
+    <hr class="c-rule">
+    <button class="c-next" id="cNext" type="button">
+      <span id="cNextName">Project Two</span><span class="c-arrow" aria-hidden="true">[&gt;]</span>
+    </button>
+  </div>
+
+  <h2 class="c-current" id="cName">Project One</h2>
+
+  <hr class="rule">
+</section>
+
+<!-- ================= PANELS ================= -->
+<div class="sheet panels">
+
+  <!-- PROJECT ONE -->
+  <article class="project-panel is-active"
+           data-name="Project One"
+           data-href="projects/project-one.html">
+    <div class="panel-head">
+      <p class="panel-lede">Interface engineering — semantic front-ends, built to be maintained.</p>
+      <p class="panel-desc">Component architecture, motion, and the last five percent of polish. Work held in production since 2019.</p>
+    </div>
+    <div class="works">
+      <a class="work" href="projects/project-one.html">
+        <div class="work-media">
+          <div class="work-img" style="--img:url('https://picsum.photos/seed/p1a/900/560')"></div>
+          <span class="work-idx">W.01</span>
+        </div>
+        <div class="work-body">
+          <h3 class="work-title">Documented Work №1</h3>
+          <span class="work-meta">Case Study · 2025</span>
+        </div>
+      </a>
+      <a class="work" href="projects/project-one.html">
+        <div class="work-media">
+          <div class="work-img" style="--img:url('https://picsum.photos/seed/p1b/900/560')"></div>
+          <span class="work-idx">W.02</span>
+        </div>
+        <div class="work-body">
+          <h3 class="work-title">Documented Work №2</h3>
+          <span class="work-meta">Case Study · 2024</span>
+        </div>
+      </a>
+    </div>
+    <a class="view-link" href="projects/project-one.html">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- PROJECT TWO -->
+  <article class="project-panel"
+           data-name="Project Two"
+           data-href="projects/project-two.html">
+    <div class="panel-head">
+      <p class="panel-lede">Design systems — token architecture, component libraries, documentation.</p>
+      <p class="panel-desc">Systems built so a team of forty can ship with the consistency of a team of four.</p>
+    </div>
+    <div class="works">
+      <a class="work" href="projects/project-two.html">
+        <div class="work-media">
+          <div class="work-img" style="--img:url('https://picsum.photos/seed/p2a/900/560')"></div>
+          <span class="work-idx">W.01</span>
+        </div>
+        <div class="work-body">
+          <h3 class="work-title">Documented Work №1</h3>
+          <span class="work-meta">System · 2025</span>
+        </div>
+      </a>
+      <a class="work" href="projects/project-two.html">
+        <div class="work-media">
+          <div class="work-img" style="--img:url('https://picsum.photos/seed/p2b/900/560')"></div>
+          <span class="work-idx">W.02</span>
+        </div>
+        <div class="work-body">
+          <h3 class="work-title">Documented Work №2</h3>
+          <span class="work-meta">System · 2023</span>
+        </div>
+      </a>
+    </div>
+    <a class="view-link" href="projects/project-two.html">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+  <!-- PROJECT THREE -->
+  <article class="project-panel"
+           data-name="Project Three"
+           data-href="projects/project-three.html">
+    <div class="panel-head">
+      <p class="panel-lede">Art direction — typography, rhythm, and restraint.</p>
+      <p class="panel-desc">Identity, editorial layout, and photographic direction for digital products.</p>
+    </div>
+    <div class="works">
+      <a class="work" href="projects/project-three.html">
+        <div class="work-media">
+          <div class="work-img" style="--img:url('https://picsum.photos/seed/p3a/900/560')"></div>
+          <span class="work-idx">W.01</span>
+        </div>
+        <div class="work-body">
+          <h3 class="work-title">Documented Work №1</h3>
+          <span class="work-meta">Identity · 2024</span>
+        </div>
+      </a>
+      <a class="work" href="projects/project-three.html">
+        <div class="work-media">
+          <div class="work-img" style="--img:url('https://picsum.photos/seed/p3b/900/560')"></div>
+          <span class="work-idx">W.02</span>
+        </div>
+        <div class="work-body">
+          <h3 class="work-title">Documented Work №2</h3>
+          <span class="work-meta">Editorial · 2023</span>
+        </div>
+      </a>
+    </div>
+    <a class="view-link" href="projects/project-three.html">
+      View project <span aria-hidden="true">→</span>
+    </a>
+  </article>
+
+</div>
+
+<svg class="calado" preserveAspectRatio="none" aria-hidden="true"><rect width="100%" height="100%" fill="url(#fret)"/></svg>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-foot">
+  <div class="foot-inner">
+    <span>© 2026 First Name M.I. Last Name</span>
+    <div class="foot-links">
+      <a href="mailto:hello@firstname.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/spine.js"></script>
+</body>
+</html>
