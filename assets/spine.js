@@ -22,7 +22,7 @@
   update();
 })();
 
-/* ---------- Carousel (runs only when the carousel is present) ---------- */
+/* ---------- Carousel (runs only when present) ---------- */
 (function(){
   var elFolio    = document.getElementById('cFolio');
   var elName     = document.getElementById('cName');
@@ -51,6 +51,7 @@
 
     elFolio.textContent    = pad(current + 1) + ' / ' + pad(projects.length);
     elName.textContent     = projects[current].name;
+    elName.href            = projects[current].href;   /* clickable title */
     elNextName.textContent = projects[next].name;
 
     panels.forEach(function(p, i){
